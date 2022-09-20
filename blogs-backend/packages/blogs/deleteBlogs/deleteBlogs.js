@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-require('./db');
+require('./dbConn');
+const Blog = require('./blogSchema');
 
 const blogsSchema = new mongoose.Schema({
     title: {

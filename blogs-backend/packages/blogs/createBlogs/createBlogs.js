@@ -1,19 +1,8 @@
 const mongoose = require('mongoose');
 
-require('./db');
+require('./dbConn');
+const Blog = require('./blogSchema');
 
-const blogsSchema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true,
-    },
-    body: {
-        type: String,
-        required: true,
-    },
-});
-
-const Blog = mongoose.model('blogs', blogsSchema);
 
 
 module.exports.main = async (args) => {
