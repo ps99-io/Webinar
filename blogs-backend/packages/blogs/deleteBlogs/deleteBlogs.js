@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 
 require('./dbConn');
 const Blog = require('./blogSchema');
